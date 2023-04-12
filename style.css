@@ -1,0 +1,175 @@
+/* Color Variables */
+:root {
+    --bgBlue: rgb(0, 61, 203);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, skyblue, rgb(0, 89, 255));
+}
+
+#theFather {
+    margin: 2vh 10% 2vh;
+    width: 80%;
+    height: 96vh;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 5px;
+}
+
+#contactList {
+    display: flex;
+    flex-flow: column nowrap;
+
+    background-color: var(--bgBlue);
+    border-radius: 15px 0% 0% 15px;
+    overflow-y: scroll;
+}
+
+.searchDiv {
+    padding: 1rem 1rem 1rem;
+}
+
+.searchBar {
+    height: 3rem;
+    background-color: rgb(171, 171, 171);
+    border-radius: 15px;
+    width: 10rem;
+    height: 2rem;
+
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    line-height: 2rem;
+}
+
+.otherChat {
+    border-top: 1px solid rgb(0, 49, 162);
+    color: #fff;
+    padding: 1rem;
+
+    display: flex;
+    gap: 1rem;
+}
+
+.otherChat > img {
+    border-radius: 50px;
+}
+
+.recentMessage {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.personInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personInfo > p {
+    font-size: .7rem;
+}
+
+.plusButton {
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+}
+
+#openChat {
+    background-color: #fff;
+    border-radius: 0 15px 15px 0;
+
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.convoHeader {
+    background-color: rgb(206, 206, 206);
+    border-bottom: 2px solid grey;
+    padding: 2rem;
+    height: 6rem;
+    border-radius: 0 15px 0 0;
+    color: var(--bgBlue);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.convoHeader > img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.convoContent {
+    overflow-y: scroll;
+    height: 31.6em;
+    padding: 2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.inMessage {
+    max-width: 30rem;
+    display: flex;
+    gap: 2rem;
+    align-self: start;
+}
+
+.inMessage > img {
+    border-radius: 50px;
+    height: 3rem;
+}
+
+.outMessage {
+    max-width: 30rem;
+    align-self: end;
+}
+
+.inText {
+    background-color: rgb(244, 244, 244);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.outText {
+    background-color: var(--bgBlue);
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem;
+}
+
+.convoInput {
+    background-color: rgb(206, 206, 206);
+    border-top: 2px solid grey;
+    padding: 2rem 2rem 0;
+    height: 7rem;
+    border-radius: 0 0 15px 0;
+
+
+    display: flex;
+    justify-content: left;
+    gap: 3rem;
+}
+
+.convoInput > input {
+    height: 2rem;
+    width: 50rem;
+    margin-top: .4rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.convoInput > img {
+    width: 3rem;
+    height: 3rem;
+}
